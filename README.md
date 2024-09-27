@@ -32,7 +32,7 @@ dotnet add <Path-to-Project-file> package packageurl-dotnet
 or in project file, add:
 
 ```xml
-<PackageReference Include="packageurl-dotnet" Version="1.0.0" />
+<PackageReference Include="packageurl-dotnet" Version="1.3.0" />
 ```
 
 Usage
@@ -40,12 +40,12 @@ Usage
 
 Creates a new PURL object from a string:
 ```c#
-PackageUrl purl = new PackageUrl(purlString);
+PackageURL purl = new PackageURL(purlString);
 ````
 
 Creates a new PURL object from purl parameters:
 ```c#
-PackageUrl purl = new PackageUrl(type, namespace, name, version, qualifiers, subpath);
+PackageURL purl = new PackageURL(type, namespace, name, version, qualifiers, subpath);
 ````
 
 License
